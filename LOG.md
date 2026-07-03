@@ -73,6 +73,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `0 fail`); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
   with combined hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Local History Archive Relocation
+
+- To continue Plan 012 after `/mnt/models` reached 100% disk use, preserved the retired
+  history archive by moving `.git-archive` to `/home/cjpher/mta-wiki-git-archive` and leaving
+  `.git-archive` as an ignored symlink. The archive was not deleted.
+
 ### V2 Extract Pilot Spend Gate
 
 - Owner approval for Plan 014 provider spend, recorded verbatim: "I give you permission for the
