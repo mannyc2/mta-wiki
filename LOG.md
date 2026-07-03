@@ -70,6 +70,24 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `0 fail`); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
   with combined hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### V2 Replay Projection Diagnostics
+
+- Corrected replay equality to use the plan-013 comparable projection: declared schema fields
+  plus runner companions, source/block evidence identity, and relation endpoints/family/kind/status;
+  v1-only payload residue and evidence role/page/hash metadata are no longer scored as equality
+  failures. The projection-v2 self-diff stayed `15770/15770`.
+- Replayed the saved 10 pilot responses through the current boundary with no provider spend as
+  `v2-extract-pilot-20260703-boundary-projection-v2`. It produced `374` accepted records and
+  `147` review entries (`evidence_quote_not_in_block=86`, `payload_schema_warning=46`,
+  `anchor_ambiguous=12`, `anchor_new=2`, `unknown_evidence_block=1`).
+- Plan 014 remains STOPPED: corrected projection agreement is still `0.00%` (`0/722`) with
+  `220` field mismatches, `502` missing records, and `154` extras. Top mismatch classes are
+  schema/content gaps, especially `payload.description`, metric unit normalization, metric scope/name/raw
+  value fields, route companions, and citation block sets.
+- Post-diagnostic gates passed: `bun run typecheck`; `bun run test` (`952 pass`, `1 skip`,
+  `0 fail`); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
+  with combined hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### Static Site Exporter Ready
 
 - Added the static HTML exporter for route, corridor, project, and source citation-target pages.

@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { basename, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
+import { kindSpec } from "@mta-wiki/db/kind-registry";
 import { stableHash, stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonObject, JsonValue, MtaCanonicalRecord, MtaEvidenceRef, MtaObservationKind } from "@mta-wiki/db/types";
 import { readReleaseRecords, releaseDir } from "@mta-wiki/pipeline/quality/release-quality";
@@ -116,8 +117,18 @@ export type ReplayKindAgreement = {
   agreement_rate: number | null;
 };
 
+export type ReplaySourceAgreement = ReplayKindAgreement & {
+  source_id: string;
+};
+
 export type ReplayReport = {
   report_version: 1;
+  comparison_projection: {
+    version: 2;
+    payload: string;
+    evidence_refs: string;
+    relation: string;
+  };
   release_id: string;
   run_id: string;
   seed: string;
@@ -128,6 +139,8 @@ export type ReplayReport = {
   self_diff: boolean;
   totals: ReplayKindAgreement;
   by_kind: Partial<Record<MtaObservationKind, ReplayKindAgreement>>;
+  source_rows: ReplaySourceAgreement[];
+  mismatch_fields_top: Record<string, number>;
   collision_summary: {
     replay_scope: ReplayCollisionSummary;
     full_release: ReplayCollisionSummary;
@@ -428,7 +441,7 @@ export function writeReplayBaselines(records: MtaCanonicalRecord[], manifest: Re
 function projectedRecordOrder(a: ReplayProjectedRecord, b: ReplayProjectedRecord) {
   return (
     a.record_kind.localeCompare(b.record_kind) ||
-    projectionKey(a).localeCompare(projectionKey(b)) ||
+    baselineOrderKey(a).localeCompare(baselineOrderKey(b)) ||
     (a.v1_record_id ?? "").localeCompare(b.v1_record_id ?? "")
   );
 }
@@ -444,7 +457,56 @@ function coarseMatchKeys(record: ReplayProjectedRecord) {
   return sortedUnique(refs.map((ref) => `${record.record_kind}|${endpoint}|${ref.source_id}#${ref.block_id}`));
 }
 
+function runnerCompanionFields(kind: MtaObservationKind) {
+  const spec = kindSpec(kind);
+  if (!spec) return [];
+  return spec.runner_companions.flatMap((companion) => companion.companion.match(/[a-z][a-z0-9_]+/gu) ?? []).filter((field) => field !== "or");
+}
+
+function comparablePayload(record: ReplayProjectedRecord): JsonObject {
+  if (record.record_kind === "relation") return {};
+  const spec = kindSpec(record.record_kind);
+  const allowed = new Set([...(spec?.fields.map((field) => field.name) ?? []), ...runnerCompanionFields(record.record_kind)]);
+  const payload: JsonObject = {};
+  for (const [field, value] of Object.entries(record.payload).sort(([a], [b]) => a.localeCompare(b))) {
+    if (!allowed.has(field) || field.startsWith("_") || value === undefined) continue;
+    payload[field] = value as JsonValue;
+  }
+  return payload;
+}
+
+function comparableRelation(record: ReplayProjectedRecord): ReplayProjectedRecord["relation"] {
+  if (record.record_kind !== "relation") return undefined;
+  return {
+    subject_id: record.relation?.subject_id,
+    object_id: record.relation?.object_id,
+    relation_family: record.relation?.relation_family,
+    relation_kind: record.relation?.relation_kind,
+    assertion_status: record.relation?.assertion_status,
+  };
+}
+
+function comparableEvidenceRefs(record: ReplayProjectedRecord) {
+  return sortedUnique(record.evidence_refs.map((ref) => `${ref.source_id}#${ref.block_id}`))
+    .map((identity) => {
+      const [source_id, block_id] = identity.split("#", 2);
+      return { source_id: source_id ?? "", block_id: block_id ?? "" };
+    })
+    .filter((ref) => ref.source_id && ref.block_id);
+}
+
 function comparableRecord(record: ReplayProjectedRecord): JsonObject {
+  return {
+    record_kind: record.record_kind,
+    truth_status: record.truth_status,
+    review_state: record.review_state,
+    payload: comparablePayload(record),
+    relation: comparableRelation(record) as JsonValue,
+    evidence_refs: comparableEvidenceRefs(record) as unknown as JsonValue,
+  };
+}
+
+function baselineOrderRecord(record: ReplayProjectedRecord): JsonObject {
   return {
     record_kind: record.record_kind,
     display_name: record.display_name,
@@ -455,6 +517,10 @@ function comparableRecord(record: ReplayProjectedRecord): JsonObject {
     relation: record.relation as JsonValue,
     evidence_refs: record.evidence_refs as unknown as JsonValue,
   };
+}
+
+function baselineOrderKey(record: ReplayProjectedRecord) {
+  return stableHash(baselineOrderRecord(record) as JsonValue);
 }
 
 function projectionKey(record: ReplayProjectedRecord) {
@@ -661,6 +727,23 @@ function addAgreement(target: ReplayKindAgreement, diff: ReplayDiffResult, kind?
   target.agreement_rate = target.expected === 0 ? null : target.match / target.expected;
 }
 
+function agreementForDiff(sourceId: string, diff: ReplayDiffResult): ReplaySourceAgreement {
+  const row: ReplaySourceAgreement = { source_id: sourceId, ...blankAgreement() };
+  addAgreement(row, diff);
+  return row;
+}
+
+function mismatchFieldsTop(diffs: ReplayDiffResult[]) {
+  const counts = new Map<string, number>();
+  for (const diff of diffs) {
+    for (const entry of diff.entries) {
+      if (entry.status !== "field_mismatch") continue;
+      for (const field of entry.fields ?? []) counts.set(field, (counts.get(field) ?? 0) + 1);
+    }
+  }
+  return Object.fromEntries([...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 40));
+}
+
 function assembleReport(input: {
   releaseId: string;
   runId: string;
@@ -670,25 +753,32 @@ function assembleReport(input: {
   actualDir: string;
   sourceCount: number;
   selfDiff: boolean;
-  diffs: ReplayDiffResult[];
+  diffs: Array<{ sourceId: string; diff: ReplayDiffResult }>;
   replayRecords: ReplayProjectedRecord[];
   fullReleaseRecords: ReplayProjectedRecord[];
 }): ReplayReport {
   const totals = blankAgreement();
   const byKind: Partial<Record<MtaObservationKind, ReplayKindAgreement>> = {};
-  for (const diff of input.diffs) {
+  for (const { diff } of input.diffs) {
     addAgreement(totals, diff);
     for (const entry of diff.entries) {
       const kindSummary = byKind[entry.record_kind] ?? blankAgreement();
       byKind[entry.record_kind] = kindSummary;
     }
   }
-  for (const diff of input.diffs) {
+  for (const { diff } of input.diffs) {
     for (const kind of Object.keys(byKind).sort() as MtaObservationKind[]) addAgreement(byKind[kind]!, diff, kind);
   }
+  const rawDiffs = input.diffs.map(({ diff }) => diff);
 
   return {
     report_version: 1,
+    comparison_projection: {
+      version: 2,
+      payload: "Declared kind-registry fields plus runner companion fields; excludes v1-only residue, local endpoint aliases, derivation bookkeeping, and extra_fields.",
+      evidence_refs: "Source id and block id only; page number, role, and text hash are ignored for replay equality.",
+      relation: "Subject id, object id, relation family, relation kind, and assertion status.",
+    },
     release_id: input.releaseId,
     run_id: input.runId,
     seed: input.seed,
@@ -699,6 +789,8 @@ function assembleReport(input: {
     self_diff: input.selfDiff,
     totals,
     by_kind: Object.fromEntries(Object.entries(byKind).sort(([a], [b]) => a.localeCompare(b))) as Partial<Record<MtaObservationKind, ReplayKindAgreement>>,
+    source_rows: input.diffs.map(({ sourceId, diff }) => agreementForDiff(sourceId, diff)).sort((a, b) => a.source_id.localeCompare(b.source_id)),
+    mismatch_fields_top: mismatchFieldsTop(rawDiffs),
     collision_summary: {
       replay_scope: collisionSummary(input.replayRecords),
       full_release: collisionSummary(input.fullReleaseRecords),
@@ -734,6 +826,12 @@ export function replayReportMarkdown(report: ReplayReport) {
   for (const [kind, row] of Object.entries(report.by_kind).sort(([a], [b]) => a.localeCompare(b))) {
     lines.push(`| ${kind} | ${row.expected} | ${row.actual} | ${row.match} | ${row.field_mismatch} | ${row.missing} | ${row.extra} | ${percent(row.agreement_rate)} |`);
   }
+  lines.push("", "## Top Mismatch Fields", "", "| Field | Count |", "|---|---:|");
+  for (const [field, count] of Object.entries(report.mismatch_fields_top).slice(0, 20)) lines.push(`| ${field} | ${count} |`);
+  lines.push("", "## Agreement By Source", "", "| Source | Expected | Actual | Match | Field mismatch | Missing | Extra | Agreement |", "|---|---:|---:|---:|---:|---:|---:|---:|");
+  for (const row of report.source_rows) {
+    lines.push(`| ${row.source_id} | ${row.expected} | ${row.actual} | ${row.match} | ${row.field_mismatch} | ${row.missing} | ${row.extra} | ${percent(row.agreement_rate)} |`);
+  }
   lines.push("", "## Collision Summary", "", "| Scope | Kind | Buckets | Records | Projection-distinguishable | Projection-ambiguous |", "|---|---|---:|---:|---:|---:|");
   for (const [scope, summary] of Object.entries(report.collision_summary) as Array<[keyof ReplayReport["collision_summary"], ReplayCollisionSummary]>) {
     for (const [kind, row] of Object.entries(summary.by_kind).sort(([a], [b]) => a.localeCompare(b))) {
@@ -762,13 +860,13 @@ export function writeReplayEval(options: {
   const expectedBySource = readBaselineDir(baselineDir);
   const actualBySource = options.actualDir ? readBaselineDir(actualDir) : expectedBySource;
   const selectedSources = options.actualOnly && options.actualDir ? manifest.sources.filter((source) => actualBySource.has(source.source_id)) : manifest.sources;
-  const diffs: ReplayDiffResult[] = [];
+  const diffs: Array<{ sourceId: string; diff: ReplayDiffResult }> = [];
   const replayRecords: ReplayProjectedRecord[] = [];
   for (const source of selectedSources) {
     const expected = expectedBySource.get(source.source_id)?.records ?? [];
     const actual = actualBySource.get(source.source_id)?.records ?? [];
     replayRecords.push(...expected);
-    diffs.push(diffReplay(expected, actual));
+    diffs.push({ sourceId: source.source_id, diff: diffReplay(expected, actual) });
   }
 
   const report = assembleReport({

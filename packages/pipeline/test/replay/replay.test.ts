@@ -126,6 +126,96 @@ describe("replay diff", () => {
     expect(diffReplay([expected], [actual]).match).toBe(1);
   });
 
+  it("ignores v1-only payload residue and volatile evidence metadata", () => {
+    const expected = {
+      ...projected("metric_v1", 10),
+      display_name: "V1 display",
+      raw_text: "v1 extracted raw text",
+      payload: {
+        ...projected("metric_v1", 10).payload,
+        _merged_field_values: { unit: ["mph"] },
+        derivation_rule: "v1-only",
+      },
+      evidence_refs: [
+        {
+          source_id: "source_a",
+          block_id: "p001_c0001",
+          page_number: 1,
+          role: "metric",
+          text_sha256: "sha256:abc",
+        },
+      ],
+    } satisfies ReplayProjectedRecord;
+    const actual = {
+      ...projected("metric_v2", 10),
+      display_name: "V2 display",
+      payload: projected("metric_v2", 10).payload,
+      evidence_refs: [{ source_id: "source_a", block_id: "p001_c0001" }],
+    } satisfies ReplayProjectedRecord;
+
+    const diff = diffReplay([expected], [actual]);
+    expect(diff.match).toBe(1);
+    expect(diff.field_mismatch).toBe(0);
+  });
+
+  it("still compares schema payload fields and evidence source blocks", () => {
+    const expected = projected("metric_v1", 10);
+    const changedPayload = { ...projected("metric_v2", 12), v1_record_id: "metric_v2_payload" };
+    const changedBlock = {
+      ...projected("metric_v2", 10),
+      v1_record_id: "metric_v2_block",
+      evidence_refs: [{ source_id: "source_a", block_id: "p001_c0002" }],
+    } satisfies ReplayProjectedRecord;
+
+    const payloadDiff = diffReplay([expected], [changedPayload]);
+    expect(payloadDiff.field_mismatch).toBe(1);
+    expect(payloadDiff.entries.find((entry) => entry.status === "field_mismatch")?.fields).toContain("payload.value");
+
+    const blockDiff = diffReplay([expected], [changedBlock]);
+    expect(blockDiff.missing).toBe(1);
+    expect(blockDiff.extra).toBe(1);
+  });
+
+  it("compares relations through canonical endpoints rather than v1 local alias residue", () => {
+    const expected: ReplayProjectedRecord = {
+      v1_record_id: "relation_v1",
+      record_kind: "relation",
+      display_name: "Project has metric",
+      truth_status: "source_stated",
+      review_state: "unreviewed",
+      payload: {
+        relation_kind: "has_metric",
+        relation_family: "metric_context",
+        subject_id: "project_a",
+        object_id: "metric_a",
+        subject_local_observation_id: "project_local",
+        object_local_observation_id: "metric_local",
+        description: "v1 wording",
+      },
+      relation: {
+        relation_kind: "has_metric",
+        relation_family: "metric_context",
+        assertion_status: "delivered",
+        subject_id: "project_a",
+        object_id: "metric_a",
+      },
+      evidence_refs: [{ source_id: "source_a", block_id: "p001_c0001" }],
+    };
+    const actual: ReplayProjectedRecord = {
+      ...expected,
+      v1_record_id: "relation_v2",
+      display_name: "V2 relation wording",
+      payload: {
+        relation_kind: "has_metric",
+        relation_family: "metric_context",
+        subject_id: "project_a",
+        object_id: "metric_a",
+        description: "v2 wording",
+      },
+    };
+    expect(diffReplay([expected], [actual]).match).toBe(1);
+  });
+
   it("classifies field mismatch, missing, and extra records", () => {
     const expectedA = projected("metric_a", 10);
     const actualA = projected("metric_a_v2", 12);
@@ -165,6 +255,19 @@ describe("replay report", () => {
     expect(result.report.totals.extra).toBe(1);
     expect(result.report.by_kind.metric_claim?.agreement_rate).toBe(0);
     expect(result.report.by_kind.relation?.agreement_rate).toBe(1);
+    expect(result.report.source_rows).toEqual([
+      {
+        source_id: "source_a",
+        expected: 3,
+        actual: 3,
+        match: 1,
+        field_mismatch: 1,
+        missing: 1,
+        extra: 1,
+        agreement_rate: 1 / 3,
+      },
+    ]);
+    expect(result.report.mismatch_fields_top["payload.value"]).toBe(1);
   });
 
   it("can scope a pilot report to sources present in the actual dir", () => {
