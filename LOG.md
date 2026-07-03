@@ -6,6 +6,24 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-03
 
+### Remaining Plan Approval
+
+- Owner approved LLM spend for the remaining post-v1 plans in this conversation: "I give you
+  permission for the llm spend."
+
+### Static Site Exporter Ready
+
+- Added the static HTML exporter for route, corridor, project, and source citation-target pages.
+  The exporter reads tracked wiki Markdown plus rebuilt `data/canonical.db`, writes to
+  `dist/site/`, caps oversized project/source pages, and builds a Pagefind search index.
+- Corpus export check passed: `318` routes, `218` corridors, `1859` projects, `2561` sources;
+  `dist/site` is `352M`; no generated HTML page exceeds `3M`.
+- Bus-product cross-links were skipped because no bus product base URL or served-route artifact
+  was supplied for Plan 011 Step 4.
+- Plan 011 code gates passed before deploy: `bun run typecheck`, `bun run test`, `bun run
+  validate` with `Issues: 0`, and `bun scripts/determinism-anchor.ts`.
+- GitHub Pages deployment remains owner-gated and has not been run yet.
+
 ### Writer Primitive Validation
 
 - Added the writer primitive grammar for ids-only inline links and structured writer blocks:

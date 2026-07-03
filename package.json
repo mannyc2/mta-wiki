@@ -38,6 +38,7 @@
     "rebuild-db": "bun packages/cli/src/cli.ts rebuild-db-from-canonical",
     "rebuild-evidence-index": "bun packages/cli/src/cli.ts rebuild-evidence-index",
     "export:release": "bun packages/cli/src/cli.ts export-release",
+    "export:site": "bun packages/cli/src/cli.ts export-site",
     "audit": "bun packages/cli/src/cli.ts audit",
     "resume": "bun packages/cli/src/cli.ts resume",
     "test": "bun test packages --timeout 900000",
@@ -46,6 +47,8 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
+    "marked": "^18.0.5",
+    "pagefind": "^1.5.2",
     "typescript": "^5.9.3"
   }
 }

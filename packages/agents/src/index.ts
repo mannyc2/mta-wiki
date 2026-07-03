@@ -8,6 +8,7 @@ export { validateRepo } from "@mta-wiki/pipeline/validate";
 export { exportCanonicalJsonl, verifyCanonicalJsonlParity } from "@mta-wiki/pipeline/materialize/export-jsonl";
 export { exportRelease } from "@mta-wiki/pipeline/materialize/export-release";
 export { deterministicQualityReport, latestReleaseId, qualityDir, readReleaseRecords, stratifiedSampleRows, writeDeterministicQualityReport } from "@mta-wiki/pipeline/quality/release-quality";
+export { exportSite, siteOutDir, type SiteExportResult } from "@mta-wiki/pipeline/site/export-site";
 export { importGtfs, readGtfsManifest, type GtfsManifest } from "@mta-wiki/db/import-gtfs";
 export { buildDossier, dossierMarkdown, writeDossier, type Dossier } from "@mta-wiki/pipeline/identity/dossier";
 export { generateGapReport, collectGaps, gapCountsByClass, type GapRow } from "@mta-wiki/pipeline/materialize/gap-report";

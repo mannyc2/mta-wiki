@@ -115,6 +115,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "rebuild-evidence-index",
     "export-jsonl",
     "export-release",
+    "export-site",
     "quality-report",
     "replay-eval",
     "identity-review",

@@ -6,6 +6,7 @@ import {
   auditSubmissionSourceIdDrift,
   claimWriterBacklogDispatchShards,
   exportCanonicalJsonl,
+  exportSite,
   exportRelease,
   generatePostIngestPlan,
   generateWriterBacklogDispatchPlan,
@@ -205,6 +206,27 @@ export const materializeCommands = {
       `Exported release ${result.releaseId}: ${result.recordCount} records across ${result.files} file(s) to ${relative(repoRoot, result.dir)} ` +
         `(manifest ${result.manifestSha256.slice(0, 12)})`,
     );
+  },
+
+  "export-site": () => {
+    const result = exportSite();
+    console.log(
+      `Exported static site to ${relative(repoRoot, result.outDir)}: ` +
+        `routes=${result.pages.routes}, corridors=${result.pages.corridors}, projects=${result.pages.projects}, sources=${result.pages.sources}.`,
+    );
+    if (result.oversizedPages.length > 0) {
+      console.log(`Oversized HTML pages (>3 MB):`);
+      for (const page of result.oversizedPages.slice(0, 20)) console.log(`- ${page}`);
+      process.exitCode = 1;
+      return;
+    }
+    const pagefind = spawnSync("bunx", ["pagefind", "--site", "dist/site"], { cwd: repoRoot, encoding: "utf8" });
+    if (pagefind.error || pagefind.status !== 0) {
+      const detail = `${pagefind.stdout ?? ""}${pagefind.stderr ?? ""}${pagefind.error ? `\n${pagefind.error.message}` : ""}`.trim();
+      console.warn(`Pagefind could not run; site exported without search.${detail ? `\n${detail}` : ""}`);
+      return;
+    }
+    console.log((pagefind.stdout ?? "").trim());
   },
 
   "quality-report": (args) => {
