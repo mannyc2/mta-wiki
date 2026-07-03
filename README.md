@@ -6,6 +6,10 @@ records and generated Markdown pages.
 Durable project documentation lives in [docs/README.md](docs/README.md). Local planning notes are
 kept outside Git under `plans/`.
 
+## Live Site
+
+The public static wiki is published at <https://mannyc2.github.io/mta-wiki/>.
+
 ## License & Data Provenance
 
 Code is licensed under the MIT License. Source documents are public NYC/MTA government records

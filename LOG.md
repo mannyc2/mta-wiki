@@ -103,7 +103,16 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   was supplied for Plan 011 Step 4.
 - Plan 011 code gates passed before deploy: `bun run typecheck`, `bun run test`, `bun run
   validate` with `Issues: 0`, and `bun scripts/determinism-anchor.ts`.
-- GitHub Pages deployment remains owner-gated and has not been run yet.
+- Owner approval for Plan 011 GitHub Pages deployment, recorded verbatim: "its not owner gated
+  i give you permission".
+- Deployed `dist/site` to the public `gh-pages` branch and enabled GitHub Pages at
+  `https://mannyc2.github.io/mta-wiki/`. GitHub reports source `gh-pages` path `/`, HTTPS
+  enforced, status `built`. HTTP 200 spot checks passed for the homepage, `route_m116`,
+  `project_lirr-mnr-ptc`, and source `116_st_morningside_ave_pleasant_ave_cb10_feb2025`.
+- Deployment branch commit: `624717c`. Post-deploy gates passed: `bun run typecheck`;
+  `bun run test` (`952 pass`, `1 skip`, `0 fail`); `bun run validate` with `Issues: 0`;
+  and `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
 ### Relation Family DB Constraint
 
