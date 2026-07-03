@@ -24,6 +24,38 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   validate` with `Issues: 0`, and `bun scripts/determinism-anchor.ts`.
 - GitHub Pages deployment remains owner-gated and has not been run yet.
 
+### Relation Family DB Constraint
+
+- Added a `relations.relation_family` SQLite CHECK and bumped `CANONICAL_DB_VERSION` from
+  `3` to `4`. This enforces the already code-closed `RELATION_FAMILIES` tuple at the DB
+  boundary, like the existing `record_kind` and `provenance` CHECKs; it is not raw
+  `relation_kind` closure. The `schema-audit` saturation signal is structurally unavailable
+  for this 18-value field because `ENUM_MAX_DISTINCT=12`.
+- Step 1 corpus evidence, recorded verbatim:
+  `SELECT COUNT(*) FROM relations;` => `20640`.
+  `SELECT relation_family, COUNT(*) FROM relations GROUP BY 1 ORDER BY 2 DESC;` =>
+  `metric_context|6015`; `timeline_context|3626`; `agency_role|2194`;
+  `treatment_context|1690`; `corridor_scope|1286`; `route_scope|1020`;
+  `publication_role|1015`; `organization_hierarchy|883`; `claim_context|815`;
+  `partnership_engagement|686`; `funding_award|645`; `program_project_scope|227`;
+  `governance_legal|197`; `dependency_or_reference|179`; `location_scope|74`;
+  `ownership_role|65`; `data_reporting|23`.
+  Out-of-tuple count => `0`.
+- Local `data/canonical.db` was rebuilt to `PRAGMA user_version=4` and contains the
+  `relation_family` CHECK; per the public-history policy from Plan 009, the DB remains ignored
+  and is not committed.
+- Determinism anchor re-baselined from `dump=9ebbafe0c187f13c46d530585191dae1f2fc78d4dc0b149dd8e385e1adc17335`,
+  `fts=f4838f4b9807560b62ba6b8296591041544408daac8f295422b43612a7c4ea2f`,
+  `master=c93647aacf94b89286f7764dde2841195ed984787e23df8ea687048be7f2a1b4`,
+  `combined=8e42b43fc9695204316204f211552b4e15ec1b444b8baaaf818b2613aa7de858` to
+  `dump=17054fd6f6e8bbdb855c2120ae1c4bebe8a73de47b50b8724f52fff2d551922b`,
+  `fts=f4838f4b9807560b62ba6b8296591041544408daac8f295422b43612a7c4ea2f`,
+  `master=7eb86293059611f6a04a97c7805ebc25cc6fb387f4989bd18ec7d24a3615cc09`,
+  `combined=d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`; the FTS
+  hash is unchanged.
+- Plan 016 gates passed: `bun run typecheck`, `bun run test`, `bun run validate` with
+  `Issues: 0`, and `bun scripts/determinism-anchor.ts`.
+
 ### Writer Primitive Validation
 
 - Added the writer primitive grammar for ids-only inline links and structured writer blocks:
