@@ -17,6 +17,18 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 - Plan 010 gates passed: `bun run typecheck`, `bun run test`, `bun run validate` with
   `Issues: 0`, and `bun scripts/determinism-anchor.ts`.
 
+### Replay Harness Preflight Stop
+
+- Plan 013 stopped before implementation under its explicit STOP conditions. The 300-row
+  `v1-rc5` audit sample cites `257` distinct sources, exceeding the plan's approximate `250`
+  source limit for the mandatory replay set.
+- Evidence-ref matching is ambiguous in the shipped v1 release: using
+  `source_id#block_id + record_kind + relation endpoints` produces `13,980` collision keys
+  across the full release and `1,997` collision keys even when scoped to the mandatory
+  audit-cited sources. The largest affected family is `metric_claim`.
+- Follow-up decision needed before Plan 013 resumes: revise the replay matching key and/or
+  rebalance the mandatory sample scope instead of silently choosing one colliding v1 record.
+
 ### Public History, Docs, And Log Cleanup
 
 - Rewrote the public repository to a compact single-root history for normal GitHub use. `main`
