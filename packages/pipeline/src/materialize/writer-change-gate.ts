@@ -48,7 +48,7 @@ function scrubWriterRegion(value: string) {
   return normalized.replace(WRITER_REGION_RE, "<!-- mta-wiki:writer:start -->\n<!-- mta-wiki:writer:end -->");
 }
 
-function writerRegion(value: string) {
+export function writerRegion(value: string) {
   return normalizeNewlines(value).match(WRITER_REGION_RE)?.[0];
 }
 

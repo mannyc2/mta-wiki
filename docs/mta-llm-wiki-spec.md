@@ -58,6 +58,29 @@ current v1 release is `v1-rc5`, and `data/exports/releases/LATEST` points to tha
 
 Downstream consumers should pin a release id instead of assuming `main` is stable.
 
+## Writer Primitives
+
+Writer regions may use typed Markdown primitives so prose can point at current structured data
+without restating values.
+
+1. **Inline reference**: `[[<kind>:<record_id>[#<block_id>]|<label>]]`
+   - `kind` is one of `route`, `corridor`, `project`, `entity`, `metric`, or `cite`.
+   - `cite:` targets a `source_id` with optional `#<block_id>`; all other kinds target a
+     canonical `record_id` with no block suffix.
+   - Legacy `[[wiki/<path>|<label>]]` links have no `kind:` prefix and are page links, not writer
+     primitives.
+2. **Block component**: fenced code block with language tag `mta:<kind>`, body a single JSON
+   object, minimum `{"id": "<record_id>"}`. The block kind set is `route`, `corridor`, `project`,
+   `entity`, and `metric`; `cite` is inline-only.
+3. **Invariant**: primitives carry only ids and labels, never restated values. A metric primitive
+   is a pointer; renderers pull the current value and provenance from `canonical.db` at build time
+   so prose cannot drift from data.
+
+Validation emits `dangling_writer_primitive` when a primitive points at an unknown record, the
+wrong record kind, an unknown source, an unknown block, or invalid block JSON. The stricter
+`uncited_writer_paragraph` rule is available behind `validate --strict-writer-citations`; by
+default it is off.
+
 ## Operating Contract
 
 The standard local gates are:

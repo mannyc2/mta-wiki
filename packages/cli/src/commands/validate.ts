@@ -22,7 +22,7 @@ function printValidationReport(report: MtaValidationReport) {
 
 export const validateCommands = {
   validate: () => {
-    const report = validateRepo();
+    const report = validateRepo({ strictWriterCitations: process.argv.includes("--strict-writer-citations") });
     printValidationReport(report);
     if (report.issues.length > 0) process.exitCode = 1;
   },

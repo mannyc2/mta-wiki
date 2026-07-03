@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { identityKeysForRecord, isGlobalRecordKind } from "@mta-wiki/db/identity";
+import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import {
   evidenceBlockIndexEntry,
   readEvidenceBlockIndex,
@@ -13,6 +14,13 @@ import {
   validateIdentityReviewAcceptedArtifacts,
 } from "@mta-wiki/pipeline/identity/identity-review-apply";
 import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import {
+  extractWriterRegion,
+  parseBlockPrimitives,
+  parseInlinePrimitives,
+  type BlockPrimitive,
+  type InlinePrimitive,
+} from "@mta-wiki/pipeline/materialize/primitives";
 import { relationEndpointShapeIssue } from "@mta-wiki/pipeline/records/relations";
 import { evidenceId, readStagedSourceBlocks, sourceBlockById, sourceBlocksRelativePath } from "@mta-wiki/pipeline/sources/source-prep";
 import { validateSubmissionRetirementOverrides } from "@mta-wiki/pipeline/records/submission-overrides";
@@ -107,6 +115,84 @@ function validatePages(pagePaths: string[], issues: MtaValidationIssue[]) {
       });
     }
   }
+}
+
+const RECORD_KIND_BY_PRIMITIVE = {
+  route: "route",
+  corridor: "corridor",
+  project: "project",
+  entity: "entity",
+  metric: "metric_claim",
+} as const;
+
+export type WriterPrimitiveValidationContext = {
+  recordKindsById: Map<string, MtaCanonicalRecord["record_kind"]>;
+  sourceIds: Set<string>;
+  blockExists: (sourceId: string, blockId: string) => boolean;
+  strictWriterCitations?: boolean | undefined;
+};
+
+function writerPrimitiveIssue(path: string, primitive: InlinePrimitive | BlockPrimitive, reason: string): MtaValidationIssue {
+  return {
+    code: "dangling_writer_primitive",
+    path,
+    message: `${reason}: ${primitive.raw.replace(/\s+/gu, " ").slice(0, 240)}`,
+  };
+}
+
+function validateRecordPrimitive(path: string, primitive: InlinePrimitive | BlockPrimitive, context: WriterPrimitiveValidationContext): MtaValidationIssue | undefined {
+  if (primitive.kind === "cite") return undefined;
+  if (primitive.kind !== "route" && primitive.kind !== "corridor" && primitive.kind !== "project" && primitive.kind !== "entity" && primitive.kind !== "metric") {
+    return writerPrimitiveIssue(path, primitive, "kind_mismatch");
+  }
+  if ("blockId" in primitive && primitive.blockId) return writerPrimitiveIssue(path, primitive, "kind_mismatch");
+  if (!primitive.id) return writerPrimitiveIssue(path, primitive, "unknown_record");
+  const actualKind = context.recordKindsById.get(primitive.id);
+  if (!actualKind) return writerPrimitiveIssue(path, primitive, "unknown_record");
+  const expectedKind = RECORD_KIND_BY_PRIMITIVE[primitive.kind];
+  if (actualKind !== expectedKind) return writerPrimitiveIssue(path, primitive, "kind_mismatch");
+  return undefined;
+}
+
+function validateCitationPrimitive(path: string, primitive: InlinePrimitive, context: WriterPrimitiveValidationContext): MtaValidationIssue | undefined {
+  if (!context.sourceIds.has(primitive.id)) return writerPrimitiveIssue(path, primitive, "unknown_source");
+  if (primitive.blockId && !context.blockExists(primitive.id, primitive.blockId)) return writerPrimitiveIssue(path, primitive, "unknown_block");
+  return undefined;
+}
+
+function validateStrictWriterCitations(path: string, writerText: string): MtaValidationIssue[] {
+  const issues: MtaValidationIssue[] = [];
+  for (const [index, paragraph] of writerText.split(/\n\s*\n/u).entries()) {
+    if (!paragraph.trim()) continue;
+    if (parseInlinePrimitives(paragraph).some((primitive) => primitive.kind === "cite")) continue;
+    issues.push({
+      code: "uncited_writer_paragraph",
+      path,
+      message: `strict writer citation check: paragraph ${index + 1} has no cite primitive.`,
+    });
+  }
+  return issues;
+}
+
+export function validateWriterPrimitivesInPage(path: string, markdown: string, context: WriterPrimitiveValidationContext): MtaValidationIssue[] {
+  const writerText = extractWriterRegion(markdown);
+  if (writerText === null || !writerText.trim()) return [];
+
+  const issues: MtaValidationIssue[] = [];
+  for (const primitive of parseInlinePrimitives(writerText)) {
+    const issue = primitive.kind === "cite" ? validateCitationPrimitive(path, primitive, context) : validateRecordPrimitive(path, primitive, context);
+    if (issue) issues.push(issue);
+  }
+  for (const primitive of parseBlockPrimitives(writerText)) {
+    if (primitive.error) {
+      issues.push(writerPrimitiveIssue(path, primitive, primitive.error === "unknown_kind" ? "kind_mismatch" : "invalid_block_json"));
+      continue;
+    }
+    const issue = validateRecordPrimitive(path, primitive, context);
+    if (issue) issues.push(issue);
+  }
+  if (context.strictWriterCitations) issues.push(...validateStrictWriterCitations(path, writerText));
+  return issues;
 }
 
 function validateStagedSourceBlocks(issues: MtaValidationIssue[]) {
@@ -338,7 +424,52 @@ function validateMetricPayloads(issues: MtaValidationIssue[]) {
   }
 }
 
-export function validateRepo(): MtaValidationReport {
+function sourcePagePath(sourceId: string) {
+  return join(repoRoot, "wiki", "sources", `${sourceId}.md`);
+}
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+}
+
+function sourcePageHasBlock(sourceId: string, blockId: string): boolean {
+  const path = sourcePagePath(sourceId);
+  if (!existsSync(path)) return false;
+  const content = readFileSync(path, "utf8");
+  const hasExact = (id: string) => new RegExp(`\\[${escapeRegExp(id)}\\]`, "u").test(content);
+  const [start, end, ...rest] = blockId.split("..");
+  if (start && end && rest.length === 0) return hasExact(start) && hasExact(end);
+  return hasExact(blockId);
+}
+
+function buildWriterPrimitiveValidationContext(records: MtaCanonicalRecord[]): WriterPrimitiveValidationContext {
+  const publicEvidenceIndex = readEvidenceBlockIndex();
+  const recordKindsById = new Map(records.map((record) => [record.record_id, record.record_kind]));
+  const sourceIds = new Set(records.filter((record) => record.record_kind === "source").map((record) => record.source_id));
+  for (const sourceId of publicEvidenceIndex?.sourceIds ?? []) sourceIds.add(sourceId);
+  return {
+    recordKindsById,
+    sourceIds,
+    blockExists: (sourceId, blockId) => {
+      try {
+        sourceBlockById(sourceId, blockId);
+        return true;
+      } catch {
+        return evidenceBlockIndexEntry(publicEvidenceIndex, sourceId, blockId) !== undefined || sourcePageHasBlock(sourceId, blockId);
+      }
+    },
+  };
+}
+
+function validateWriterPrimitives(pagePaths: string[], records: MtaCanonicalRecord[], issues: MtaValidationIssue[]) {
+  const context = buildWriterPrimitiveValidationContext(records);
+  for (const path of pagePaths) {
+    if (path === join(repoRoot, "wiki", "index.md") || path.startsWith(join(repoRoot, "wiki", "sources"))) continue;
+    issues.push(...validateWriterPrimitivesInPage(path, readFileSync(path, "utf8"), context));
+  }
+}
+
+export function validateRepo(options: { strictWriterCitations?: boolean | undefined } = {}): MtaValidationReport {
   const issues: MtaValidationIssue[] = [];
   const requiredPathCount = validateRequiredPaths(issues);
   const submissions = readSubmissionEntries();
@@ -351,6 +482,14 @@ export function validateRepo(): MtaValidationReport {
   validateRelations(issues);
   validateGlobalIdentities(issues);
   validateMetricPayloads(issues);
+  validateWriterPrimitives(pagePaths, records, issues);
+  if (options.strictWriterCitations) {
+    const strictContext = { ...buildWriterPrimitiveValidationContext(records), strictWriterCitations: true };
+    for (const path of pagePaths) {
+      if (path === join(repoRoot, "wiki", "index.md") || path.startsWith(join(repoRoot, "wiki", "sources"))) continue;
+      issues.push(...validateWriterPrimitivesInPage(path, readFileSync(path, "utf8"), strictContext).filter((issue) => issue.code === "uncited_writer_paragraph"));
+    }
+  }
   issues.push(...validateIdentityReviewAcceptedArtifacts().issues);
   issues.push(...validateIdentityOverrideArtifacts());
   issues.push(...validateSubmissionRetirementOverrides({ knownSubmissionIds: new Set(submissions.map((entry) => entry.submission_id)) }));

@@ -6,6 +6,17 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-03
 
+### Writer Primitive Validation
+
+- Added the writer primitive grammar for ids-only inline links and structured writer blocks:
+  `[[route:id|label]]`, `[[corridor:id|label]]`, `[[project:id|label]]`,
+  `[[entity:id|label]]`, `[[metric:id|label]]`, and `[[cite:source#block|label]]`,
+  plus fenced `mta:<kind>` JSON blocks for route, corridor, project, entity, and metric context.
+- `validate` now checks non-source writer regions for dangling writer primitives by default while
+  leaving the stricter uncited-paragraph check behind `--strict-writer-citations`.
+- Plan 010 gates passed: `bun run typecheck`, `bun run test`, `bun run validate` with
+  `Issues: 0`, and `bun scripts/determinism-anchor.ts`.
+
 ### Public History, Docs, And Log Cleanup
 
 - Rewrote the public repository to a compact single-root history for normal GitHub use. `main`
