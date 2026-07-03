@@ -170,6 +170,11 @@ describe("replay diff", () => {
     const payloadDiff = diffReplay([expected], [changedPayload]);
     expect(payloadDiff.field_mismatch).toBe(1);
     expect(payloadDiff.entries.find((entry) => entry.status === "field_mismatch")?.fields).toContain("payload.value");
+    expect(payloadDiff.entries.find((entry) => entry.status === "field_mismatch")?.field_values).toContainEqual({
+      field: "payload.value",
+      expected: "10",
+      actual: "12",
+    });
 
     const blockDiff = diffReplay([expected], [changedBlock]);
     expect(blockDiff.missing).toBe(1);
@@ -268,6 +273,13 @@ describe("replay report", () => {
       },
     ]);
     expect(result.report.mismatch_fields_top["payload.value"]).toBe(1);
+    expect(result.report.diagnostic_examples.field_mismatches[0]?.fields).toContainEqual({
+      field: "payload.value",
+      expected: "10",
+      actual: "12",
+    });
+    expect(result.report.diagnostic_examples.missing[0]?.record_id).toBe("source_a");
+    expect(result.report.diagnostic_examples.extra[0]?.record_id).toBe("metric_extra");
   });
 
   it("can scope a pilot report to sources present in the actual dir", () => {

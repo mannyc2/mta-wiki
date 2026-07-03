@@ -81,6 +81,7 @@ export type ReplayDiffEntry = {
   actual_record_id?: string | undefined;
   match_key?: string | undefined;
   fields?: string[] | undefined;
+  field_values?: Array<{ field: string; expected: string; actual: string }> | undefined;
 };
 
 export type ReplayDiffResult = {
@@ -121,6 +122,32 @@ export type ReplaySourceAgreement = ReplayKindAgreement & {
   source_id: string;
 };
 
+export type ReplayRecordExample = {
+  source_id: string;
+  record_kind: MtaObservationKind;
+  record_id?: string | undefined;
+  match_key?: string | undefined;
+};
+
+export type ReplayFieldMismatchExample = {
+  source_id: string;
+  record_kind: MtaObservationKind;
+  expected_record_id?: string | undefined;
+  actual_record_id?: string | undefined;
+  match_key?: string | undefined;
+  fields: Array<{
+    field: string;
+    expected: string;
+    actual: string;
+  }>;
+};
+
+export type ReplayDiagnosticExamples = {
+  field_mismatches: ReplayFieldMismatchExample[];
+  missing: ReplayRecordExample[];
+  extra: ReplayRecordExample[];
+};
+
 export type ReplayReport = {
   report_version: 1;
   comparison_projection: {
@@ -141,6 +168,7 @@ export type ReplayReport = {
   by_kind: Partial<Record<MtaObservationKind, ReplayKindAgreement>>;
   source_rows: ReplaySourceAgreement[];
   mismatch_fields_top: Record<string, number>;
+  diagnostic_examples: ReplayDiagnosticExamples;
   collision_summary: {
     replay_scope: ReplayCollisionSummary;
     full_release: ReplayCollisionSummary;
@@ -573,6 +601,20 @@ function fieldDiffs(expected: ReplayProjectedRecord, actual: ReplayProjectedReco
   return fields.filter((field) => left.get(field) !== right.get(field));
 }
 
+function fieldDiffDetails(expected: ReplayProjectedRecord, actual: ReplayProjectedRecord) {
+  const left = new Map<string, string>();
+  const right = new Map<string, string>();
+  flatten(comparableRecord(expected) as JsonValue, "", left);
+  flatten(comparableRecord(actual) as JsonValue, "", right);
+  return sortedUnique([...left.keys(), ...right.keys()])
+    .filter((field) => left.get(field) !== right.get(field))
+    .map((field) => ({ field, expected: left.get(field) ?? "undefined", actual: right.get(field) ?? "undefined" }));
+}
+
+function shortFieldValue(value: string) {
+  return value.length <= 240 ? value : `${value.slice(0, 237)}...`;
+}
+
 function diffItems(records: ReplayProjectedRecord[]): ReplayDiffItem[] {
   return records.map((record, index) => ({ record, index, projectionKey: projectionKey(record), coarseKeys: coarseMatchKeys(record) })).sort(itemOrder);
 }
@@ -620,13 +662,15 @@ export function diffReplay(expected: ReplayProjectedRecord[], actual: ReplayProj
       continue;
     }
     unmatchedActual.delete(paired.index);
+    const fieldValues = fieldDiffDetails(expectedItem.record, paired.candidate.record);
     entries.push({
       status: "field_mismatch",
       record_kind: expectedItem.record.record_kind,
       expected_record_id: expectedItem.record.v1_record_id,
       actual_record_id: paired.candidate.record.v1_record_id,
       match_key: firstSharedKey(expectedItem, paired.candidate),
-      fields: fieldDiffs(expectedItem.record, paired.candidate.record),
+      fields: fieldValues.map((field) => field.field),
+      field_values: fieldValues.map((field) => ({ field: field.field, expected: shortFieldValue(field.expected), actual: shortFieldValue(field.actual) })),
     });
   }
 
@@ -744,6 +788,31 @@ function mismatchFieldsTop(diffs: ReplayDiffResult[]) {
   return Object.fromEntries([...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 40));
 }
 
+function diagnosticExamples(diffs: Array<{ sourceId: string; diff: ReplayDiffResult }>): ReplayDiagnosticExamples {
+  const field_mismatches: ReplayFieldMismatchExample[] = [];
+  const missing: ReplayRecordExample[] = [];
+  const extra: ReplayRecordExample[] = [];
+  for (const { sourceId, diff } of diffs) {
+    for (const entry of diff.entries) {
+      if (entry.status === "field_mismatch" && field_mismatches.length < 25) {
+        field_mismatches.push({
+          source_id: sourceId,
+          record_kind: entry.record_kind,
+          expected_record_id: entry.expected_record_id,
+          actual_record_id: entry.actual_record_id,
+          match_key: entry.match_key,
+          fields: (entry.field_values ?? []).slice(0, 12),
+        });
+      } else if (entry.status === "missing" && missing.length < 25) {
+        missing.push({ source_id: sourceId, record_kind: entry.record_kind, record_id: entry.expected_record_id, match_key: entry.match_key });
+      } else if (entry.status === "extra" && extra.length < 25) {
+        extra.push({ source_id: sourceId, record_kind: entry.record_kind, record_id: entry.actual_record_id, match_key: entry.match_key });
+      }
+    }
+  }
+  return { field_mismatches, missing, extra };
+}
+
 function assembleReport(input: {
   releaseId: string;
   runId: string;
@@ -791,6 +860,7 @@ function assembleReport(input: {
     by_kind: Object.fromEntries(Object.entries(byKind).sort(([a], [b]) => a.localeCompare(b))) as Partial<Record<MtaObservationKind, ReplayKindAgreement>>,
     source_rows: input.diffs.map(({ sourceId, diff }) => agreementForDiff(sourceId, diff)).sort((a, b) => a.source_id.localeCompare(b.source_id)),
     mismatch_fields_top: mismatchFieldsTop(rawDiffs),
+    diagnostic_examples: diagnosticExamples(input.diffs),
     collision_summary: {
       replay_scope: collisionSummary(input.replayRecords),
       full_release: collisionSummary(input.fullReleaseRecords),
@@ -807,6 +877,10 @@ function assembleReport(input: {
 
 function percent(value: number | null) {
   return value === null ? "n/a" : `${(value * 100).toFixed(2)}%`;
+}
+
+function markdownCell(value: string | undefined) {
+  return (value ?? "").replace(/\|/gu, "\\|").replace(/\r?\n/gu, " ");
 }
 
 export function replayReportMarkdown(report: ReplayReport) {
@@ -831,6 +905,21 @@ export function replayReportMarkdown(report: ReplayReport) {
   lines.push("", "## Agreement By Source", "", "| Source | Expected | Actual | Match | Field mismatch | Missing | Extra | Agreement |", "|---|---:|---:|---:|---:|---:|---:|---:|");
   for (const row of report.source_rows) {
     lines.push(`| ${row.source_id} | ${row.expected} | ${row.actual} | ${row.match} | ${row.field_mismatch} | ${row.missing} | ${row.extra} | ${percent(row.agreement_rate)} |`);
+  }
+  lines.push("", "## Diagnostic Examples", "", "### Field Mismatches", "", "| Source | Kind | Expected | Actual | Key | Fields |", "|---|---|---|---|---|---|");
+  for (const example of report.diagnostic_examples.field_mismatches.slice(0, 10)) {
+    const fields = example.fields.map((field) => `${field.field}: ${field.expected} -> ${field.actual}`).join("<br>");
+    lines.push(
+      `| ${markdownCell(example.source_id)} | ${markdownCell(example.record_kind)} | ${markdownCell(example.expected_record_id)} | ${markdownCell(example.actual_record_id)} | ${markdownCell(example.match_key)} | ${markdownCell(fields)} |`,
+    );
+  }
+  lines.push("", "### Missing Examples", "", "| Source | Kind | Record | Key |", "|---|---|---|---|");
+  for (const example of report.diagnostic_examples.missing.slice(0, 10)) {
+    lines.push(`| ${markdownCell(example.source_id)} | ${markdownCell(example.record_kind)} | ${markdownCell(example.record_id)} | ${markdownCell(example.match_key)} |`);
+  }
+  lines.push("", "### Extra Examples", "", "| Source | Kind | Record | Key |", "|---|---|---|---|");
+  for (const example of report.diagnostic_examples.extra.slice(0, 10)) {
+    lines.push(`| ${markdownCell(example.source_id)} | ${markdownCell(example.record_kind)} | ${markdownCell(example.record_id)} | ${markdownCell(example.match_key)} |`);
   }
   lines.push("", "## Collision Summary", "", "| Scope | Kind | Buckets | Records | Projection-distinguishable | Projection-ambiguous |", "|---|---|---:|---:|---:|---:|");
   for (const [scope, summary] of Object.entries(report.collision_summary) as Array<[keyof ReplayReport["collision_summary"], ReplayCollisionSummary]>) {

@@ -288,6 +288,23 @@
 | tsp_report_2017 | 170 | 170 | 170 | 0 | 0 | 0 | 100.00% |
 | victory_blvd_bay_st_little_clove_rd_may2025 | 21 | 21 | 21 | 0 | 0 | 0 | 100.00% |
 
+## Diagnostic Examples
+
+### Field Mismatches
+
+| Source | Kind | Expected | Actual | Key | Fields |
+|---|---|---|---|---|---|
+
+### Missing Examples
+
+| Source | Kind | Record | Key |
+|---|---|---|---|
+
+### Extra Examples
+
+| Source | Kind | Record | Key |
+|---|---|---|---|
+
 ## Collision Summary
 
 | Scope | Kind | Buckets | Records | Projection-distinguishable | Projection-ambiguous |

@@ -84,6 +84,10 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `220` field mismatches, `502` missing records, and `154` extras. Top mismatch classes are
   schema/content gaps, especially `payload.description`, metric unit normalization, metric scope/name/raw
   value fields, route companions, and citation block sets.
+- Added deterministic replay diagnostic examples to projection-v2 reports: bounded field
+  mismatch, missing, and extra samples with truncated expected/actual values. This used no
+  provider spend and did not change replay scores: self-diff remains `15770/15770`, and
+  boundary projection-v2 remains `0/722`.
 - Post-diagnostic gates passed: `bun run typecheck`; `bun run test` (`952 pass`, `1 skip`,
   `0 fail`); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
   with combined hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
