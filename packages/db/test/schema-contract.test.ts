@@ -3,7 +3,7 @@
 //   * tables-cover-projection: every per-kind column maps to a known KIND_SPECS field or runner
 //     companion with the right scalar→SQL type (catches typos + orphan columns + wrong types),
 //   * every plain table is STRICT; every virtual table is FTS5,
-//   * both CHECKs (record_kind, provenance) survive in the rendered DDL,
+//   * all three CHECKs (record_kind, provenance, relation_family) survive in the rendered DDL,
 //   * the schema is deterministic: two builds from SCHEMA_DDL give identical sqlite_master text,
 //   * no hand-written CREATE TABLE/INDEX/VIRTUAL TABLE outside the renderer (schema-ddl.ts).
 
@@ -73,7 +73,7 @@ describe("rebuilt schema structure", () => {
     }
   });
 
-  it("the record_kind + provenance CHECKs survive", () => {
+  it("the record_kind + provenance + relation_family CHECKs survive", () => {
     const db = buildSchemaOnly();
     try {
       const tables = schemaMaster(db).filter((o) => o.type === "table");
@@ -81,6 +81,7 @@ describe("rebuilt schema structure", () => {
       expect(tables.find((t) => t.name === "relations")?.sql).toContain(
         "CHECK (provenance IN ('authored','derived','canonicalizer'))",
       );
+      expect(tables.find((t) => t.name === "relations")?.sql).toContain("CHECK (relation_family IN ('route_scope',");
     } finally {
       db.close();
     }

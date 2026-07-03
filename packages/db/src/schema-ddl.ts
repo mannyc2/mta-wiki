@@ -1,11 +1,11 @@
 // STRICT DDL renderer for the canonical schema (Step 3 / S3.3). Drizzle tables (schema.ts) carry
-// the typed query + column surface but NOT SQLite STRICT, the two CHECKs, or FTS5 — this file is
+// the typed query + column surface but NOT SQLite STRICT, the three CHECKs, or FTS5 — this file is
 // the single generator that turns the table defs into the executable CREATE statement list that
 // rebuildCanonicalDb runs ("migration = rebuild from journals" needs a DDL list).
 //
 // This is the ONLY file allowed to contain CREATE-statement text (the no-hand-DDL grep exempts it):
 // the renderer assembles CREATE TABLE/INDEX from getTableConfig, plus an explicit constraint map
-// for the bits Drizzle doesn't model (STRICT — always; the two CHECK bodies). The 2 FTS5 virtual
+// for the bits Drizzle doesn't model (STRICT — always; the three CHECK bodies). The 2 FTS5 virtual
 // tables (no Drizzle builder exists) are raw strings here; the 11 views are authored as sqliteView
 // in schema.ts and rendered to CREATE VIEW here.
 
@@ -55,8 +55,10 @@ const PER_KIND = new Set([
 
 /** CHECK bodies, by table → column. Drizzle's check() stores a SQL object that doesn't serialise
  *  to this inlined text cleanly, so the bodies are authored here (the DDL home). The contract test
- *  asserts both appear in the rendered DDL. The record_kind list mirrors the records.record_kind
- *  domain; changing it is the same audit-gated event as a schema.ts column edit. */
+ *  asserts all three appear in the rendered DDL. The record_kind list mirrors the
+ *  records.record_kind domain; changing it is the same audit-gated event as a schema.ts column edit.
+ *  The relation_family list mirrors RELATION_FAMILIES in @mta-wiki/pipeline/records/relations.ts;
+ *  packages/pipeline/test/records/relation-family-ddl-sync.test.ts enforces the mirror. */
 const CHECK_BODIES: Record<string, Record<string, string>> = {
   records: {
     record_kind:
@@ -64,6 +66,8 @@ const CHECK_BODIES: Record<string, Record<string, string>> = {
   },
   relations: {
     provenance: "provenance IN ('authored','derived','canonicalizer')",
+    relation_family:
+      "relation_family IN ('route_scope','corridor_scope','location_scope','metric_context','claim_context','treatment_context','timeline_context','agency_role','organization_hierarchy','publication_role','ownership_role','program_project_scope','partnership_engagement','governance_legal','funding_award','data_reporting','dependency_or_reference','other')",
   },
 };
 

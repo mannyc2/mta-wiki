@@ -34,8 +34,9 @@ import type { JsonObject, JsonValue, MtaCanonicalRecord, MtaEvidenceRef, MtaSubm
 /** Bump whenever the generated DDL changes (column promotion, new kind, new table). Readers
  *  fail loudly on a mismatch instead of misreading an old layout.
  *  v2 (S2.1): relations assertion qualifiers, source/event/metric_claim companions, ref_* registries.
- *  v3 (v1 Plan 006): project date_normalized/date_precision/date_source_field promoted columns. */
-export const CANONICAL_DB_VERSION = 3;
+ *  v3 (v1 Plan 006): project date_normalized/date_precision/date_source_field promoted columns.
+ *  v4 (plan 016): relation_family CHECK constraint (DDL-only; row content unchanged). */
+export const CANONICAL_DB_VERSION = 4;
 
 const RELATION_PROVENANCE = ["authored", "derived", "canonicalizer"] as const;
 type RelationProvenance = (typeof RELATION_PROVENANCE)[number];
